@@ -44,7 +44,7 @@ public class ByWebView {
     private ByWebChromeClient mWebChromeClient;
     private ByLoadJsHolder byLoadJsHolder;
 
-    private ByWebView(Builder builder) {
+    public ByWebView(Builder builder) {
         this.activity = builder.mActivity;
         this.mErrorTitle = builder.mErrorTitle;
         this.mErrorLayoutId = builder.mErrorLayoutId;
@@ -101,7 +101,7 @@ public class ByWebView {
     }
 
     @SuppressLint("SetJavaScriptEnabled")
-    private void handleSetting() {
+    protected void handleSetting() {
         WebSettings ws = mWebView.getSettings();
         // 保存表单数据
         ws.setSaveFormData(true);
