@@ -1,7 +1,7 @@
 package me.jingbin.web;
 
 import android.os.Build;
-import android.support.annotation.RequiresApi;
+import androidx.annotation.RequiresApi;
 import android.text.TextUtils;
 import android.webkit.ValueCallback;
 import android.webkit.WebView;
